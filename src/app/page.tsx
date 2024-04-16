@@ -1,14 +1,13 @@
-export default async function Home() {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
-
-  const response = await fetch('https://api.github.com/users/jovemcleb');
-
-  const user = await response.json();
-
+export default function Home() {
   return (
     <>
-      <h1>Hello World</h1>
-      <pre>{JSON.stringify(user, null, 2)}</pre>
+      <h1>Home</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+        laboriosam totam, illo placeat nesciunt eveniet quo quibusdam tempora
+        quia recusandae nulla ducimus quod molestias voluptate. Soluta dolores
+        repellat harum magnam.
+      </p>
     </>
   );
 }
